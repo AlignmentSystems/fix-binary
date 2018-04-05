@@ -1,0 +1,19 @@
+FIX BINARY PROTOCOL
+=======================
+
+The Financial Information eXchange (FIX) protocol (https://www.fixtrading.org/)
+is a standard electronic communications protocol for international real-time 
+exchange of information related to securities transactions and markets.  
+
+The FIX standard defines a set of protocols which can be organized in two
+classes: ASCII protocols and binary protocols. This plugin (fix_sofh)
+implements a subset of the FIX standard based on the binary protocols. 
+For support of FIX ASCII protocols, refer to the companion FIX4/FIXT plugin 
+(fix4_fixt). 
+
+Some of the protocol specifications supported by this analyzer include:
+
+- SOFH Session Protocol with SBE Encodings (detection and validation)
+- SOFH Session Protocol with GPB, ASN.1,FIXTV, FIXML, FAST, JSON, BSON Encodings
+  (detection and validation)
+- Events: fix_sofh_detected(), fix_sbe_message()   

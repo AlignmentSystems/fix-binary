@@ -1,0 +1,5 @@
+[package]
+description = binary FIX analyzer package
+tags = bro plugin, bro analyzer, binary FIX protocol analyzer
+script_dir = scripts/RLABS/FIX_SBE
+build_command = ./configure --bro-dist=%(bro_dist)s && make
