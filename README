@@ -11,6 +11,10 @@ implements a subset of the FIX standard based on the binary protocols.
 For support of FIX ASCII protocols, refer to the companion FIX4/FIXT plugin 
 (fix4_fixt). 
 
+Please notice that this analyzer only supports a small subset of the
+FIX binary protocol. Its main intention is to detect FIX connections and do
+some basic validation, not to extract all possible fields.
+
 Some of the protocol specifications supported by this analyzer include:
 
 - SOFH Session Protocol with SBE Encodings (detection and validation)
